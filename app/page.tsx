@@ -136,7 +136,6 @@ export default function Home() {
 
   return (
     <div className="flex h-screen bg-gray-50">
-      {/* Left Sidebar */}
       <div className="w-20 bg-white border-r border-gray-200 flex flex-col items-center py-6 gap-6 shrink-0">
         {panelOrder.map((panelId) => {
           const panel = allPanels.find((p) => p.id === panelId)!;
@@ -161,7 +160,6 @@ export default function Home() {
         })}
       </div>
 
-      {/* Right Panel Area with Horizontal Scroll */}
       <div className="flex-1 overflow-x-auto overflow-y-hidden">
         {visiblePanels.length > 0 ? (
           <DndContext
